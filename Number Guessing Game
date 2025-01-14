@@ -1,0 +1,41 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+using namespace std;
+int main()
+{
+    srand(static_cast<unsigned>(time(0)));
+    int r=rand()%100+1;
+    int guess=0;
+    cout<<"Enter a number between 1 and 100."<<endl;
+    while(guess!=r)
+    {
+        cout<<"Enter your guess: ";
+        cin>>guess;
+        if(guess>r){
+            cout<<"Too high!try again"<<endl;
+        }
+        else if(guess<r){
+            cout<<"Too low!try again"<<endl;
+        }
+        else{
+            cout<<"Congrats you have entered the correct value"<<endl;
+        }
+    }
+    return 0;
+}
+OUTPUT
+Enter a number between 1 and 100.
+Enter your guess: 30
+Too low!try again
+Enter your guess: 60
+Too high ! try again
+Enter your guess: 50
+Too low!try again
+Enter your guess: 55
+Too high ! try again
+Enter your guess: 53
+Too low!try again
+Enter your guess: 54
+Congrats you have entered the correct value
+
