@@ -23,6 +23,9 @@ int main()
         case 4:
                 cout<<a/b;
                 break;
+        case 5:
+                cout<<a%b;
+                break;
         default:
                 cout<<"Invalid option";
                 break;
