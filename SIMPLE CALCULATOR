@@ -2,28 +2,29 @@
 using namespace std;
 int main()
 {
-    int n,a,b;
+    int a,b;
+    char c;
     cout<<"Enter a value:";
     cin>>a;
     cout<<"Enter b value:";
     cin>>b;
-    cout<<"Enter operation value:";
-    cin>>n;
-    switch(n)
+    cout<<"Enter an arithmetic operator:";
+    cin>>c;
+    switch(c)
     {
-        case 1:
+        case '+':
                 cout<<a+b;
                 break;
-        case 2:
+        case '-':
                 cout<<a-b;
                 break;
-        case 3:
+        case '*':
                 cout<<a*b;
                 break;
-        case 4:
+        case '/':
                 cout<<a/b;
                 break;
-        case 5:
+        case '%':
                 cout<<a%b;
                 break;
         default:
@@ -35,5 +36,7 @@ int main()
 OUTPUT
 Enter a value:5
 Enter b value:5
-Enter operation value:3
+Enter an arithmetic operator:*
 25
+
+=== Code Execution Successful ===
